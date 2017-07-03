@@ -1,0 +1,10 @@
+---
+# yum variables can be checked using this command:
+#   $ python -c 'import yum, pprint; yb = yum.YumBase(); pprint.pprint(yb.conf.yumvar, width=1)'
+
+rabbitmq_gpgkey_url:            "https://copr-be.cloud.fedoraproject.org/results/jlaska/rabbitmq/pubkey.gpg"
+rabbitmq_repo:
+  jlaska-rabbitmq:
+    file: jlaska-rabbitmq
+    enabled: "{{ rabbitmq_enabled }}"
+    baseurl: "https://copr-be.cloud.fedoraproject.org/results/jlaska/rabbitmq/epel-7-$basearch/"

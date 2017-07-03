@@ -1,2 +1,5 @@
 ---
 # defaults file for adipriyantobpn.repo-rabbitmq
+
+repo_location:              international   # available options: international, vagrant
+rabbitmq_enabled:           yes
