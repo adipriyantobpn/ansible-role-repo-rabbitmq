@@ -2,4 +2,5 @@
 # defaults file for adipriyantobpn.repo-rabbitmq
 
 repo_location:              international   # available options: international, vagrant
+vagrant_repo_base_dir:      "file:///vagrantshare/repo/"
 rabbitmq_enabled:           yes
